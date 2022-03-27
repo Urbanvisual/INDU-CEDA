@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.logo{
+    height: 200px;
+    width: 250px;
+    
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-head {   
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+
+.tituloPerfil {
+    display: flex;
+    justify-content: center;
+}
