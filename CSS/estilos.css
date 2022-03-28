@@ -180,8 +180,18 @@ footer section img{
     margin-right: 40px;
 }
 
+.footerContainer {
+	display: flex;
+	flex-direction: row;
+}
     
+.titulofooter {
+	width: "35%";
 
+}
     
+.iconsFooter{
+	width: "35%";
+}
 	
 
