@@ -1,0 +1,12 @@
+.archivos{
+    display: flex;
+    align-items: center;
+}
+
+hr { 
+    height: 4px;
+  background-color: red;
+}
+
+
+
