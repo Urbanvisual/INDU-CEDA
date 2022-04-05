@@ -86,63 +86,59 @@
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Producción</h1>
+          <h1 class="h2">Listado de salidas</h1>
         </div>
 
         <div class="table-responsive">
           <!-- AGREGUE AQUÍ EL CONTENIDO DE LA PAGINA-->
-          <div class="container">
-            <!-- Gaes Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Produccion</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Person Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Person Item 1-->
-                <div class="col-md-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/agregar.png" alt="..."/>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Agregar trabajo</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 2-->
-                <div class="col-md-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/lista-de-verificacion.png" alt="..."/>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Ver listado de produccion</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 3-->
-                <div class="col-md-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/salida.png" alt="..."/>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Ver lisado de salidas </h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 4-->
+          <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">ID producto o trabajo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Fecha de entrega </th>
+                <th scope="col">Valor</th>
+                <th scope="col">100% pago</th>
+                <th scope="col">Modificar</th>
 
-            </div>
-        </div>
-
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">101</th>
+                <td>Mark</td>
+                <td>12/03/2022</td>
+                <td>$46.000</td>
+                <td><button type="button" class="btn btn-success">pago</button></td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">modificar</button>
+                    <button type="button" class="btn btn-outline-danger">eliminarr</button>                    
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">102</th>
+                <td>Jacob</td>
+                <td>23/03/2022</td>
+                <td>$168.000</td>
+                <td><button type="button" class="btn btn-success">pago</button></td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">modificar</button>
+                    <button type="button" class="btn btn-outline-danger">eliminarr</button>                    
+                </td>
+              </tr>
+              <tr>  
+                <th scope="row">103</th>
+                <td>fabricante de vidrios S.A</td>
+                <td>12/03/2022</td>
+                <td>$46.000</td>
+                <td><button type="button" class="btn btn-danger">50%</button></td>
+                <td>
+                    <button type="button" class="btn btn-outline-primary">modificar</button>
+                    <button type="button" class="btn btn-outline-danger">eliminarr</button>                    
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </main>
     </div>
