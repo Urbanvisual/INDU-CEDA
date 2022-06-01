@@ -30,7 +30,7 @@
 
 
   <!-- Custom styles for this template -->
-  <link href="../dashboard.css" rel="stylesheet">
+  <link href="../../dashboard.css" rel="stylesheet">
 </head>
 
 <body style="overflow: hidden">
@@ -43,7 +43,7 @@
     <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search" style="height:auto">
     <div class="navbar-nav">
       <div class="nav-item justify-content-center" style="margin: 5px 10px">
-        <img src="../../assets/img/personas/DIEGO MORENO.jpeg" class="rounded-circle" width="40" height="40" alt="..."/>
+        <img src="../../../assets/img/personas/DIEGO MORENO.jpeg" class="rounded-circle" width="40" height="40" alt="..."/>
       </div>
     </div>
   </header>
@@ -86,66 +86,59 @@
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Inventario</h1>
+          <h1 class="h2">Registrar Entrada</h1>
         </div>
 
         <div class="table-responsive">
           <!-- AGREGUE AQUÍ EL CONTENIDO DE LA PAGINA-->
 
-
-          <div class="container">
-            <!-- Gaes Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">INVENTARIO</h2>
-            <br>
-            <br>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email/usuario</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="alguien@example.com">
             </div>
-            <!-- Person Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Person Item 1-->
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/entrada.png" height="120px" width="120px" alt="..."/>
-                        <div class="card-body text-center">
-                          <a class="btn btn-primary text-white" href="./registrarentrada/index.html">REGISTRAR ENTRADA</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 2-->
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/consultar.png" height="120px" width="120px" alt="..."/>
-                        <div class="card-body text-center">
-                          <a class="btn btn-success text-white" href="./Consultarinventario/index.html">CONSULTAR INVENTARIO</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 3-->
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/salida.png" height="120px" width="120px" alt="..."/>
-                        <div class="card-body text-center">
-                          <a class="btn btn-danger text-white" href="./salidas/index.html">VER LISTADO SALIDAS </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 4-->
-
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Clave</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="password">
             </div>
-        </div>
+            <div class="col-md-6">
+              <label for="inputAddress" class="form-label">Nombre del producto</label>
+              <input type="text" class="form-control" id="inputAddress" >
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Tipo</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            <div class="col-md-2">
+              <label for="inputAddress2" class="form-label">ID-producto</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="ID-####">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Fecha Ingreso</label>
+              <input type="text" class="form-control" id="inputCity"placeholder="DD/MM/AA">
+            </div>
+
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Estado</label>
+              <select id="inputState" class="form-select"> 
+                <option selected>Escoger...</option>
+                <option>Activo</option>
+                <option>Inactivo</option>
+              </select>
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    No soy un Robot
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Registrar</button>
+            </div>
+          </form>
 
         </div>
       </main>
@@ -156,7 +149,7 @@
       <div class="row">
           <!-- Footer About Text-->
           <div class="col-lg-10 d-flex align-items-center">
-              <Image src="../../assets/img/logo.png" alt="" width="40" height="40" style="margin-left: 10px;"></Image>
+              <Image src="../../../assets/img/logo.png" alt="" width="40" height="40" style="margin-left: 10px;"></Image>
               <h5 style="padding-left: 10px;">Indumetalicas MYM</h5>
           </div>
           <!-- Footer Social Icons-->
