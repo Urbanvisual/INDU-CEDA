@@ -86,65 +86,62 @@
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Clientes</h1>
+          <h1 class="h2">Eliminar cliente</h1>
         </div>
 
         <div class="table-responsive">
           <!-- AGREGUE AQUÍ EL CONTENIDO DE LA PAGINA-->
-          <div class="container">
-            <!-- Gaes Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Clientes</h2>
-            <br>
-            <br>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Person Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Person Item 1-->
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/agregaclient.jpg" height="110px" width="100px" alt="..."/>
-                        <div class="card-body text-center">
-                          <a class="btn btn-primary text-white" href="agregarcliente.html">Agregar cliente</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 2-->
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/consultaclient" height="110px" width="110px" alt="..."/>
-                        <div class="card-body text-center">
-                          <a class="btn btn-primary text-white" href="consultar.html">Consultar cliente</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 3-->
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-responsive thumb-post-photos" src="img/eliminarclient" height="110px" width="100px" alt="..."/>
-                        <div class="card-body text-center">
-                          <a class="btn btn-primary text-white" href="eliminarcliente.html">Eliminar cliente </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Person Item 4-->
-
-            </div>
-        </div>
-
+          <table class="table">
+            <thead class="table-dark">
+                <th scope="col">Identificación</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Productos</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Eliminar</th>
+            </thead>
+            <tbody>
+              <tr>
+                <tr>
+                    <th scope="row">10101010</th>
+                    <td>Mark</td>
+                    <td>Perez</td>
+                    <td>Calle f # 123</td>
+                    <td>310310210</td>
+                    <td>Escalera</td>
+                    <td>Activo</td>
+                <td>
+                    <button type="button" class="btn btn-outline-danger">Eliminar cliente</button>                    
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">111111</th>
+                <td>Martha</td>
+                <td>Mendoza</td>
+                <td>Calle 100 #3</td>
+                <td>310214321</td>
+                <td>Silla</td>
+                <td>Activo</td>
+                <td>
+                    <button type="button" class="btn btn-outline-danger">Eliminar cliente</button>                    
+                </td>
+              </tr>
+              <tr>  
+                <th scope="row">12121212</th>
+                <td>Beatriz</td>
+                <td>Pinzón</td>
+                <td>Cra 104# 139 - 4</td>
+                <td>350312310</td>
+                <td>Escalera</td>
+                <td>Inactivo</td>
+                <td>
+                    <button type="button" class="btn btn-outline-danger">Eliminar cliente</button>                    
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </main>
     </div>
@@ -154,7 +151,7 @@
       <div class="row">
           <!-- Footer About Text-->
           <div class="col-lg-10 d-flex align-items-center">
-              <a href="/index.html"> <Image src="../../assets/img/logo.png" alt="" width="40" height="40" style="margin-left: 10px;"></Image> </a>
+             <a href="index.html"></a> <Image src="../../assets/img/logo.png" alt="" width="40" height="40" style="margin-left: 10px;"> </Image>
               <h5 style="padding-left: 10px;">Indumetalicas MYM</h5>
           </div>
           <!-- Footer Social Icons-->
