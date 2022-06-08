@@ -92,51 +92,86 @@
         <div class="table-responsive">
           <!-- AGREGUE AQUÍ EL CONTENIDO DE LA PAGINA-->
           
-          <div class="container">
-              <div class="row">
-                  <div class="col-12 p-5" >
-                    <div class="mb-3">
-                        <label for="formagretrabnom" class="form-label">Nombres  </label>
-                        <input type="email" class="form-control" id="formagretrabnom" placeholder="">
-                      </div>                      <div class="mb-3">
-                        <label for="formagretrabnom" class="form-label">Apellidos  </label>
-                        <input type="email" class="form-control" id="formagretrabnom" placeholder="">
-                      </div>
-                      <div class="mb-3">
-                        <label for="formagretrabnom" class="form-label">Identificación  </label>
-                        <input type="email" class="form-control" id="formagretrabnom" placeholder="">
-                      </div>
-                      <div class="mb-3">
-                        <label for="formagretrabnom" class="form-label">Número telefónico de contacto  </label>
-                        <input type="email" class="form-control" id="formagretrabnom" placeholder="">
-                      </div>
-                      <div class="mb-3">
-                        <label for="formagretrabnom" class="form-label">Dirección  </label>
-                        <input type="email" class="form-control" id="formagretrabnom" placeholder="">
-                      </div>
-                      <div class="mb-3">
-                        <label for="formagretrabnom" class="form-label">Producto </label>
-                        <input type="email" class="form-control" id="formagretrabnom" placeholder="">
-                      </div>
-                      </div>
-
-                      <div class="row btn_agre">
-                          <div class="col-6">
-                      <div class="mb-3">
-                          <a href="index.html">
-                        <button type="button" class="btn btn-danger">cancelar</button>
-                    </a>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <button type="button" class="btn btn-success">Agregar</button>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6  ">
+              <label for="nombrecliente" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="nombrecliente"  required>
+              <div class="valid-feedback">
+                Nombres registrados con éxito
               </div>
-          </div>
+              <div class="invalid-feedback">Es necesario poner el nombre</div>
+            </div>
+            <div class="col-md-6">
+              <label for="nombrecliente" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="nombrecliente"  required>
+              <div class="valid-feedback">
+                Apellidos registrados con éxito
+              </div>
+              <div class="invalid-feedback">Es necesario registrar al menos un apellido</div>
+            </div>
+            <div class="col-md-6">
+              <label for="nombrecliente" class="form-label">Identificación</label>
+              <input type="number" class="form-control" id="nombrecliente"  required>
+              <div class="valid-feedback">
+                Identificación agregada satisfactoriamente
+              </div>
+              <div class="invalid-feedback">Falta la  identificación</div>
+            </div>
+            <div class="col-md-6">
+              <label for="nombrecliente" class="form-label">Teléfono</label>
+              <input type="tel" name="phone"  class="form-control" id="nombrecliente"  required>
+              <div class="valid-feedback">
+                Teléfono registrado
+              </div>
+              <div class="invalid-feedback">Por favor registre un número de contacto</div>
+            </div>
+            <div class="col-md-6">
+              <label for="nombrecliente" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="nombrecliente"  required>
+              <div class="valid-feedback">
+                Dirección registrada
+              </div>
+              <div class="invalid-feedback">Registre una Dirección</div>
+            </div>
+          
+                <div class="col-md-6">
+                  <label for="nombrecliente" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="nombrecliente"  placeholder="@"> 
+                  
+                  
+                </div>
+                <div class="col-md-6">
+                  <label for="nombrecliente" class="form-label">Fecha de visita</label>
+                  <input type="date" class="form-control" id="nombrecliente"  required>
+                  <div class="valid-feedback">
+                    Registro exitoso
+                  </div>
+                  <div class="invalid-feedback">Es necesario colocar una fecha</div>
+                </div><div class="col-md-6">
+                  <label for="nombrecliente" class="form-label">Producto</label>
+                  <input type="text" class="form-control" id="nombrecliente"  required>
+                  <div class="valid-feedback">
+                    Producto válido
+                  </div>
+                  <div class="invalid-feedback">Registre un producto</div>
+                </div>
+                <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="confirmar" required>
+                  <label for="confirmar" class="form-check-label">Confirmar información </label>
+                </div>
+                <div class="valid-feedback">
+                  Confirmación exitosa
+                </div>
+                <div class="invalid-feedback">Por favor confirme la información/div>
+              </div>
+
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Agregar
+                </div>
+            </div>
+          </form>
 
 
 
@@ -167,6 +202,28 @@
     crossorigin="anonymous"></script>
   <script>
     feather.replace()
+  </script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
   </script>
 </body>
 
