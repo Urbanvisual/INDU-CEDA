@@ -105,15 +105,27 @@
   <option value="46843 Andrés">
   <option value="6486 carlos">
 </datalist>>
+<div class="invalid-feedback">
+  seleccione un cliente
+</div>
+<div class="valid-feedback">
+  excelente
+</div>
                       </div>
                       <div class="col-md-6">
-                        <label for="exampleDataList" class="form-label">Operrario que va a trabajar en el producto</label>
+                        <label for="exampleDataList" class="form-label">Operario que va a trabajar en el producto</label>
                         <input class="form-control" list="operarios" id="exampleDataList" placeholder="Operarios" required>
                         <datalist id="operarios">
                           <option value="operario1">
                           <option value="operario2">
                          
                         </datalist>>
+                        <div class="invalid-feedback">
+                          seleccione un operario
+                        </div>
+                        <div class="valid-feedback">
+                          excelente
+                        </div>
                       </div>
                       <div class="col-md-6">
                         <label for="exampleDataList" class="form-label">Tipo de producto</label>
@@ -123,6 +135,12 @@
                           <option value="Ventana">
                             <option value="Marquesina">
                               <option value="Domo">
+                                <div class="invalid-feedback">
+                                  seleccione un producto
+                                </div>
+                                <div class="valid-feedback">
+                                  excelente
+                                </div>
                          
                         </datalist>>
                       </div>
@@ -130,36 +148,77 @@
                         <label for="validationCustom03" class="form-label">Caracteristicas del producto</label>
                         <input type="text" class="form-control" id="validationCustom03" required>
                         <div class="invalid-feedback">
-                          Please provide a valid city.
+                         indique las caracteristicas del producto
+                        </div>
+                        <div class="valid-feedback">
+                          excelente
                         </div>
                       </div>
+                      
+                    
                       <div class="col-md-6">
-                        <label for="validationCustom04" class="form-label">State</label>
-                        <select class="form-select" id="validationCustom04" required>
-                          <option selected disabled value="">Choose...</option>
-                          <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                          Please select a valid state.
-                        </div>
-                      </div>
-                      <br>
-                      <div class="col-md-6">
-                        <label for="validationCustom05" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid zip.
-                        </div>
-                      </div>
-                     
-          
-                 
-                   
-                     
+                        <label for="nombrecliente" class="form-label">Valor del producto</label>
+              <input type="number" class="form-control" id="nombrecliente" placeholder="Abono del 50% del valor total del producto"  required>
+              <div class="valid-feedback">
+                excelente
+              </div>
+              <div class="invalid-feedback">Falta precio</div>
+            </div>
+         
+          <div class="col-md-3">
+            <label for="exampleDataList" class="form-label">insumos a usar </label>
+            <input class="form-control" list="insumos" id="exampleDataList" placeholder="insumos" required>
+            <datalist id="insumos">
+              <option value="varilla">
+              <option value="pintura">
+                <option value="soldadura">
+                  <option value="hojas de hierro">
+                     </datalist>>
+            <div class="invalid-feedback">
+              seleccione un insumos
+            </div>
+            <div class="valid-feedback">
+              excelente
+            </div>
+     
+          </div>
+          <div class="col-md-3">
+            <label for="nombrecliente" class="form-label"></label>
+  <input type="number" class="form-control" id="cantidad" placeholder="cantidad"  required>
+  <div class="valid-feedback">
+    excelente
+  </div>
+  <div class="invalid-feedback">Falta precio</div>
+</div>
+<div class="col-md-3">
+  <label for="exampleDataList" class="form-label">insumos a usar </label>
+  <input class="form-control" list="insumos" id="exampleDataList" placeholder="insumos" required>
+  <datalist id="insumos">
+    <option value="varilla">
+    <option value="pintura">
+      <option value="soldadura">
+        <option value="hojas de hierro">
+           </datalist>>
+  <div class="invalid-feedback">
+    seleccione un insumos
+  </div>
+  <div class="valid-feedback">
+    excelente
+  </div>
 
+</div>
+<div class="col-md-3">
+  <label for="nombrecliente" class="form-label"></label>
+<input type="number" class="form-control" id="cantidad" placeholder="cantidad"  required>
+<div class="valid-feedback">
+excelente
+</div>
+<div class="invalid-feedback">Falta precio</div>
+</div>
+          
                       <div class="row btn_agre">
                           <div class="col-6">
-                      <div class="mb-3">
+                      <div class="mb-6">
                           <a href="../producción/agregar.html">
                         <button type="reset" class="btn btn-danger">cancelar</button>
                     </a>
@@ -171,16 +230,11 @@
                     </div>
                     </div>
                   </div>
+                  </div>
               </div>
             </form>
           </div>
-          <form action="/action_page.php">
-            <input list=“navegadores">
-            <datalist id=“navegadores">
-            <option value="Internet Explorer">
-            <option value="Firefox">
-            </datalist>
-            </form>
+          
 
 
 
