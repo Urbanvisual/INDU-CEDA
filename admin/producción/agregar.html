@@ -95,8 +95,8 @@
               <div class="row">
                   <div class="col-12 p-5" >
                     <form class="row g-3 needs-validation" novalidate>
-                      <div class="col-md-6">
-                        <label for="exampleDataList" class="form-label">cliente</label>
+                      <div class="col-md-3">
+                        <label for="exampleDataList" class="form-label">Cliente</label>
 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="ID del cliente" required>
 <datalist id="datalistOptions">
   <option value="8565  fernando">
@@ -112,6 +112,11 @@
   excelente
 </div>
                       </div>
+                      <div class="col-md-3">
+                      <a href="../../admin/clientes/agregarcliente.html">
+                        <button type="button" class="btn btn-light">Agregar cliente</button>
+                      </a>
+                    </div>
                       <div class="col-md-6">
                         <label for="exampleDataList" class="form-label">Operario que va a trabajar en el producto</label>
                         <input class="form-control" list="operarios" id="exampleDataList" placeholder="Operarios" required>
@@ -166,8 +171,8 @@
             </div>
          
           <div class="col-md-3">
-            <label for="exampleDataList" class="form-label">insumos a usar </label>
-            <input class="form-control" list="insumos" id="exampleDataList" placeholder="insumos" required>
+            <label for="exampleDataList" class="form-label">Insumos a usar </label>
+            <input class="form-control" list="insumos" id="exampleDataList" placeholder="Insumos" required>
             <datalist id="insumos">
               <option value="varilla">
               <option value="pintura">
@@ -184,11 +189,11 @@
           </div>
           <div class="col-md-3">
             <label for="nombrecliente" class="form-label"></label>
-  <input type="number" class="form-control" id="cantidad" placeholder="cantidad"  required>
+  <input type="number" class="form-control" id="cantidad" placeholder="Cantidad"  required>
   <div class="valid-feedback">
     excelente
   </div>
-  <div class="invalid-feedback">Falta cantidad</div>
+  <div class="invalid-feedback">Falta Cantidad</div>
 </div>
 <div class="col-md-6">
   <label for="exampleDataList" class="form-label">Estado en el que se registra  </label>
@@ -207,8 +212,8 @@
 
 </div>
 <div class="col-md-3">
-  <label for="exampleDataList" class="form-label">insumos a usar </label>
-  <input class="form-control" list="insumos" id="exampleDataList" placeholder="insumos" required>
+  <label for="exampleDataList" class="form-label">Insumos a usar </label>
+  <input class="form-control" list="insumos" id="exampleDataList" placeholder="Insumos" required>
   <datalist id="insumos">
     <option value="varilla">
     <option value="pintura">
@@ -219,24 +224,36 @@
     seleccione un insumos
   </div>
   <div class="valid-feedback">
-    excelente
+    Excelente
   </div>
 
 </div>
 <div class="col-md-3">
   <label for="nombrecliente" class="form-label"></label>
-<input type="number" class="form-control" id="cantidad" placeholder="cantidad"  required>
+<input type="number" class="form-control" id="cantidad" placeholder="Cantidad"  required>
 <div class="valid-feedback">
-excelente
+Excelente
 </div>
 <div class="invalid-feedback">Falta cantidad</div>
 </div>
+<div class="col-12">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="Confirmar" required>
+    <label for="confirmar" class="form-check-label">Confirmar información </label>
+  </div>
+  <div class="valid-feedback">
+    Confirmación exitosa
+  </div>
+  <div class="invalid-feedback">Por favor confirme la información/div>
+</div>
+
+  </div>
           
                       <div class="row btn_agre">
                           <div class="col-6">
                       <div class="mb-6">
                           <a href="../producción/agregar.html">
-                        <button type="reset" class="btn btn-danger">cancelar</button>
+                        <button type="reset" class="btn btn-danger">Cancelar</button>
                     </a>
                       </div>
                     </div>
