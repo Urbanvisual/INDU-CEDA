@@ -72,27 +72,59 @@
           <h1 class="h3 mb-3 fw-normal">Registrar</h1>
       
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required>
             <label for="floatingInput">Nombre de Usuario </label>
+            <div class="invalid-feedback">
+              Por favor digite nombre de Usuario
+            </div>
+            <div class="valid-feedback">
+              Excelente
+            </div>
+     
           </div>
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
             <label for="floatingInput">Correo </label>
+            <div class="invalid-feedback">
+              Por favor digite correo
+            </div>
+            <div class="valid-feedback">
+              Excelente
+            </div>
+     
           </div>
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" required>
             <label for="floatingInput">Telefono </label>
+            <div class="invalid-feedback">
+              Por favor digite su Telefono
+            </div>
+            <div class="valid-feedback">
+              Excelente
+            </div>
           </div>
 
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
             <label for="floatingPassword">Nueva Contraseña</label>
+            <div class="invalid-feedback">
+              Por favor digite su Contraseña
+            </div>
+            <div class="valid-feedback">
+              Excelente
+            </div>
           </div>
       
           <div class="checkbox mb-3">
             <label>
-              <input type="checkbox" value="remember-me"> Acepto terminos y condiciones
+              <input type="checkbox" value="remember-me" required> Acepto terminos y condiciones
             </label>
+            <div class="invalid-feedback">
+              Por favor acepte los terminos y condiciones
+            </div>
+            <div class="valid-feedback">
+              Excelente
+            </div>
           </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">Registrar</button>
           <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
@@ -104,3 +136,24 @@
 
 
   </div>
+  
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+ </body>
