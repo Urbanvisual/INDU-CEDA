@@ -67,7 +67,7 @@
               </a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="../producción/index.html">
+              <a class="nav-link" href="../../admin/producción/produccion.html">
                 <span data-feather="trending-up"></span>
                 Producción
               </a>
@@ -94,36 +94,93 @@
           <div class="container">
               <div class="row">
                   <div class="col-12 p-5" >
-                    <div class="mb-3">
-                        <label for="formagretrabnom" class="form-label">Nombre de la persona y/o empresa</label>
-                        <input type="email" class="form-control" id="formagretrabnom" placeholder="">
+                    <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-6">
+                        <label for="exampleDataList" class="form-label">cliente</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="ID del cliente" required>
+<datalist id="datalistOptions">
+  <option value="8565  fernando">
+  <option value="616516 mauricio">
+  <option value="846584 cesar">
+  <option value="46843 Andrés">
+  <option value="6486 carlos">
+</datalist>>
                       </div>
-                      <div class="mb-3">
-                        <label for="formagretrabespe" class="form-label">Especificaciones del trabajo</label>
-                        <textarea class="form-control" id="formagretrabespe" rows="3"></textarea>
+                      <div class="col-md-6">
+                        <label for="exampleDataList" class="form-label">Operrario que va a trabajar en el producto</label>
+                        <input class="form-control" list="operarios" id="exampleDataList" placeholder="Operarios" required>
+                        <datalist id="operarios">
+                          <option value="operario1">
+                          <option value="operario2">
+                         
+                        </datalist>>
                       </div>
-                      <div class="mb-3">
-                        <label for="formagretrababon" class="form-label">50% de abono</label>
-                        <input type="email" class="form-control" id="formagretrababon" placeholder="$$$">
+                      <div class="col-md-6">
+                        <label for="exampleDataList" class="form-label">Tipo de producto</label>
+                        <input class="form-control" list="tipos-productos" id="exampleDataList" placeholder="productos" required>
+                        <datalist id="tipos-productos">
+                          <option value="Puerta">
+                          <option value="Ventana">
+                            <option value="Marquesina">
+                              <option value="Domo">
+                         
+                        </datalist>>
                       </div>
+                      <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Caracteristicas del producto</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom04" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                      <br>
+                      <div class="col-md-6">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                      </div>
+                     
+          
+                 
+                   
+                     
 
                       <div class="row btn_agre">
                           <div class="col-6">
                       <div class="mb-3">
-                          <a href="index.html">
-                        <button type="button" class="btn btn-danger">cancelar</button>
+                          <a href="../producción/agregar.html">
+                        <button type="reset" class="btn btn-danger">cancelar</button>
                     </a>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <button type="button" class="btn btn-success">Agregar</button>
-                      </div>
+                    <div class="col-md-6">
+                      <button class="btn btn-primary" type="submit">Agregar</button>
+                    </div>
                     </div>
                     </div>
                   </div>
               </div>
+            </form>
           </div>
+          <form action="/action_page.php">
+            <input list=“navegadores">
+            <datalist id=“navegadores">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            </datalist>
+            </form>
 
 
 
