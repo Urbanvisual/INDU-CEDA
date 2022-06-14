@@ -55,13 +55,13 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../inventario/index.html">
+              <a class="nav-link"  href="../inventario/index.html">
                 <span data-feather="package"></span>
                 Inventario
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../proveedores/index.html">
+                <a class="nav-link active" aria-current="page" href="../proveedores/index.html">
                 <span data-feather="truck"></span>
                 Proveedores
               </a>
@@ -86,7 +86,7 @@
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Agregar trabajo</h1>
+          <h1 class="h2">Modificar producto #101</h1>
         </div>
 
         <div class="table-responsive">
@@ -95,9 +95,9 @@
               <div class="row">
                   <div class="col-12 p-5" >
                     <form class="row g-3 needs-validation" novalidate>
-                      <div class="col-md-3">
-                        <label for="exampleDataList" class="form-label">Cliente</label>
-<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="ID del cliente" required>
+                      <div class="col-md-6">
+                        <label for="exampleDataList" class="form-label">cliente</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" value="616516 mauricio"   >
 <datalist id="datalistOptions">
   <option value="8565  fernando">
   <option value="616516 mauricio">
@@ -112,14 +112,9 @@
   excelente
 </div>
                       </div>
-                      <div class="col-md-3">
-                      <a href="../../admin/clientes/agregarcliente.html">
-                        <button type="button" class="btn btn-light">Agregar cliente</button>
-                      </a>
-                    </div>
                       <div class="col-md-6">
                         <label for="exampleDataList" class="form-label">Operario que va a trabajar en el producto</label>
-                        <input class="form-control" list="operarios" id="exampleDataList" placeholder="Operarios" required>
+                        <input class="form-control" list="operarios" id="exampleDataList" value="operario1" >
                         <datalist id="operarios">
                           <option value="operario1">
                           <option value="operario2">
@@ -134,7 +129,7 @@
                       </div>
                       <div class="col-md-6">
                         <label for="exampleDataList" class="form-label">Tipo de producto</label>
-                        <input class="form-control" list="tipos-productos" id="exampleDataList" placeholder="productos" required>
+                        <input class="form-control" list="tipos-productos" id="exampleDataList" value="Puerta" >
                         <datalist id="tipos-productos">
                           <option value="Puerta">
                           <option value="Ventana">
@@ -151,7 +146,7 @@
                       </div>
                       <div class="col-md-6">
                         <label for="validationCustom03" class="form-label">Caracteristicas del producto</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <input type="text" class="form-control" id="validationCustom03" value="Este producto tiene como caracteristicas dos metros de alto por cinco de hancho y va a ser de color azul" >
                         <div class="invalid-feedback">
                          indique las caracteristicas del producto
                         </div>
@@ -163,7 +158,7 @@
                     
                       <div class="col-md-6">
                         <label for="nombrecliente" class="form-label">Valor del producto</label>
-              <input type="number" class="form-control" id="nombrecliente" placeholder="Abono del 50% del valor total del producto"  required>
+              <input type="number" class="form-control" id="nombrecliente" value="250.000"  >
               <div class="valid-feedback">
                 excelente
               </div>
@@ -171,8 +166,8 @@
             </div>
          
           <div class="col-md-3">
-            <label for="exampleDataList" class="form-label">Insumos a usar </label>
-            <input class="form-control" list="insumos" id="exampleDataList" placeholder="Insumos" required>
+            <label for="exampleDataList" class="form-label">insumos a usar </label>
+            <input class="form-control" list="insumos" id="exampleDataList" value="varilla" >
             <datalist id="insumos">
               <option value="varilla">
               <option value="pintura">
@@ -189,15 +184,15 @@
           </div>
           <div class="col-md-3">
             <label for="nombrecliente" class="form-label"></label>
-  <input type="number" class="form-control" id="cantidad" placeholder="Cantidad"  required>
+  <input type="number" class="form-control" id="cantidad" value="9"  >
   <div class="valid-feedback">
     excelente
   </div>
-  <div class="invalid-feedback">Falta Cantidad</div>
+  <div class="invalid-feedback">Falta cantidad</div>
 </div>
 <div class="col-md-6">
   <label for="exampleDataList" class="form-label">Estado en el que se registra  </label>
-     <input class="form-control" list="estados" id="exampleDataList" placeholder="" required>
+     <input class="form-control" list="estados" id="exampleDataList" value="Armado" >
   <datalist id="estados">
     <option value="Pintado">
     <option value="Armado">
@@ -212,8 +207,8 @@
 
 </div>
 <div class="col-md-3">
-  <label for="exampleDataList" class="form-label">Insumos a usar </label>
-  <input class="form-control" list="insumos" id="exampleDataList" placeholder="Insumos" required>
+  <label for="exampleDataList" class="form-label">insumos a usar </label>
+  <input class="form-control" list="insumos" id="exampleDataList" value="pintura" >
   <datalist id="insumos">
     <option value="varilla">
     <option value="pintura">
@@ -224,41 +219,31 @@
     seleccione un insumos
   </div>
   <div class="valid-feedback">
-    Excelente
+    excelente
   </div>
 
 </div>
 <div class="col-md-3">
   <label for="nombrecliente" class="form-label"></label>
-<input type="number" class="form-control" id="cantidad" placeholder="Cantidad"  required>
+<input type="number" class="form-control" id="cantidad" value="2"  >
 <div class="valid-feedback">
-Excelente
+excelente
 </div>
 <div class="invalid-feedback">Falta cantidad</div>
 </div>
-<div class="col-12">
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" id="Confirmar" required>
-    <label for="confirmar" class="form-check-label">Confirmar información </label>
-  </div>
-  <div class="valid-feedback">
-    Confirmación exitosa
-  </div>
-  <div class="invalid-feedback">Por favor confirme la información/div>
-</div>
 
-  </div>
           
                       <div class="row btn_agre">
-                          <div class="col-6">
-                      <div class="mb-6">
-                          <a href="../producción/agregar.html">
-                        <button type="reset" class="btn btn-danger">Limpiar</button>
-                    </a>
-                      </div>
+                          <div class="col-mb-6">
+                      
+                          <a href="../producción/salidasad.html">
+                        <button type="reset" class="btn btn-danger">volver</button>
+                          </a>
                     </div>
                     <div class="col-md-6">
-                      <button class="btn btn-primary" type="submit">Agregar</button>
+                      <a href="">
+                      <button class="btn btn-primary" type="submit">Modificar</button>
+                    </a>
                     </div>
                     </div>
                     </div>
