@@ -91,29 +91,97 @@
           </a>
           <h1 class="col-md-9 h2">Crear Producto</h1>
         </div>
+  <!--CONTENIDO-->
 
-        <div class="table-responsive">
-          
+ 
+
+
+    <div>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6  ">
+          <label for="nombrecliente" class="form-label">Nombre del producto</label>
+          <input type="text" class="form-control" id="nombrecliente" required>
+          <div class="valid-feedback">
+            Nombre registrado con éxito
+          </div>
+          <div class="invalid-feedback">Es necesario poner el nombre del Producto</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="nombrecliente" class="form-label">Representante Legal</label>
+          <input type="text" class="form-control" id="nombrecliente" required>
+          <div class="valid-feedback">
+            Representante registrados con éxito
+          </div>
+          <div class="invalid-feedback">Es necesario registrar al menos un Representante Legal</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="NitCliente" class="form-label">NIt</label>
+          <input type="number" class="form-control" id="NitCliente" required>
+          <div class="valid-feedback">
+            NIt agregado satisfactoriamente
+          </div>
+          <div class="invalid-feedback">Falta el Nit</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="nombrecliente" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="nombrecliente" required>
+          <div class="valid-feedback">
+            Dirección registrada
+          </div>
+          <div class="invalid-feedback">Registre una Dirección</div>
+        </div>
+
+
+        <div class="col-md-6">
+          <label for="nombrecliente" class="form-label">Teléfono</label>
+          <input type="number" name="phone" class="form-control" id="nombrecliente" required>
+          <div class="valid-feedback">
+            Teléfono registrado
+          </div>
+          <div class="invalid-feedback">Por favor registre un número de Telefono</div>
+        </div>
+
+
+        <div class="col-md-6">
+          <label for="nombrecliente" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="nombrecliente" placeholder="@" required>
+          <div class="valid-feedback">
+            Correo registrado
+          </div>
+          <div class="invalid-feedback">Por favor registre un correo electronico</div>
+        </div>
+
+
+        </div>
+
+        <div class="col-12" style="padding: 20px;">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="confirmar" required>
+            <label for="confirmar" class="form-check-label">Confirmar información </label>
+          </div>
+          <div class="valid-feedback">
+            Confirmación exitosa
+          </div>
+
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Agregar
+        </div>
+      </form>
+    </div>
+
+
+</div>
+        
         </div>
       </main>
     </div>
-  </div>
+    
 
-  <footer class="footer mt-auto py-3 bg-light">
-      <div class="row">
-          <!-- Footer About Text-->
-          <div class="col-lg-10 d-flex align-items-center">
-              <Image src="../../../assets/img/logo.png" alt="" width="40" height="40" style="margin-left: 10px;"></Image>
-              <h5 style="padding-left: 10px;">Indumetalicas MYM</h5>
-          </div>
-          <!-- Footer Social Icons-->
-          <div class="col-lg-2 mb-6 mb-lg-1">
-              <a class="btn btn-social mx-1" href="#!"><span data-feather="facebook"></span></i></a>
-              <a class="btn btn-social mx-1" href="#!"><span data-feather="twitter"></span></a>
-              <a class="btn btn-social mx-1" href="#!"><span data-feather="instagram"></span></a>
-          </div>
-      </div>
-  </footer>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
