@@ -83,66 +83,72 @@
       </nav>
 
       <!--CONTENIDO-->
-      <main class="col-md-10" style="overflow: scroll;height: 830px">
-        <div
-          class="d-flex align-items-center pt-3 pb-2 mb-3 border-bottom">
+      
+      <main class="col-md-5" style="overflow: scroll;">
+        <div class="d-flex align-items-center pt-3 pb-2 mb-3 border-bottom">
           <a class="col-md-1" href="../../../admin/proveedores/index.html">
             <span data-feather="arrow-left"></span>
           </a>
           <h1 class="col-md-9 h2">Crear Proveedor</h1>
         </div>
-
+      <div>
         <div class="table-responsive">
           <div>
             <form class="row g-3">
               <div class="col-md-4">
-                <label for="validationServer01" class="form-label">First name</label>
-                <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                <label for="validationServer01" class="form-label">Nombre Razón</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
                 <div class="valid-feedback">
-                  Looks good!
+                  Correcto!
                 </div>
               </div>
+
               <div class="col-md-4">
-                <label for="validationServer02" class="form-label">Last name</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                <label for="validationServer02" class="form-label">Nit</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
                 <div class="valid-feedback">
-                  Looks good!
+                  Correcto!
                 </div>
               </div>
+              
+              
+              <div class="col-md-4 ">
+                <label for="validationServer01" class="form-label">Representante Legal</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+                <div class="valid-feedback">
+                  Correcto!
+                </div>
+              </div>
+
               <div class="col-md-4">
-                <label for="validationServerUsername" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                  <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                  <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                    Please choose a username.
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <label for="validationServer03" class="form-label">City</label>
-                <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                <div id="validationServer03Feedback" class="invalid-feedback">
-                  Please provide a valid city.
-                </div>
-              </div>
-              <div class="col-md-3">
-                <label for="validationServer04" class="form-label">State</label>
-                <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                  <option selected disabled value="">Choose...</option>
-                  <option>...</option>
-                </select>
-                <div id="validationServer04Feedback" class="invalid-feedback">
-                  Please select a valid state.
-                </div>
-              </div>
-              <div class="col-md-3">
-                <label for="validationServer05" class="form-label">Zip</label>
+                <label for="validationServer05" class="form-label">Telefono</label>
                 <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
                 <div id="validationServer05Feedback" class="invalid-feedback">
                   Please provide a valid zip.
                 </div>
               </div>
+            
+              
+              <div class="col-md-4">
+                <label for="validationServer03" class="form-label">Dirección de correspondencia</label>
+                <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                 Ciudad no valida.
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationServer04" class="form-label">Ciudad</label>
+                <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Bogota</option>
+                  <option>Medellin</option>
+                  <option>Cali</option>
+                </select>
+                <div id="validationServer04Feedback" class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+             
               <div class="col-12">
                 <div class="form-check">
                   <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
@@ -160,6 +166,7 @@
             </form>
           </div>
         </div>
+      </div>
       </main>
     </div>
   </div>
