@@ -86,7 +86,7 @@
       <main class="col-md-9" style="overflow: scroll;height: 830px">
         <div
           class="d-flex align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <a class="col-md-1" href="../../proveedores/productosPorProveedor/">
+          <a class="col-md-1" href="../../proveedores/productosPorProveedor/index.html">
             <span data-feather="arrow-left"></span>
           </a>
           <h1 class="col-md-9 h2">Orden de compra</h1>
@@ -121,13 +121,22 @@
         
 
             <div class="col-md-6">
-              <label for="nombrecliente" class="form-label">Descripción</label>
-              <input type="" class="form-control" id="nombrecliente" required>
+              <label for="nombrecliente" class="form-label">Precio</label>
+              <input type="number" class="form-control" id="nombrecliente" required>
               <div class="valid-feedback">
                 Descripción registrada
               </div>
               <div class="invalid-feedback">Registre una Descripción</div>
             </div>    
+
+            <div class="col-md-6">
+              <label for="nombrecliente" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" id="nombrecliente" required>
+              <div class="valid-feedback">
+                Cantidad registrada
+              </div>
+              <div class="invalid-feedback">Registre una Cantidad</div>
+            </div>  
 
           </div>
 
@@ -140,13 +149,18 @@
                 Confirmación exitosa
               </div>
 
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Agregar
-            </div>
-          </form>
-        </div>
-
+              <div class="row btn_agre" style="padding: 15px;">
+                <div class="col-2">
+                  <div class="mb-6">
+                    <a href="../producción/agregar.html">
+                      <button type="reset" class="btn btn-danger">Limpiar</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <button class="btn btn-primary" type="submit">Agregar</button>
+                </div>
+              </div>
 
     </div>
 
@@ -174,6 +188,30 @@
   <script>
     feather.replace()
   </script>
+
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
 </body>
 
 </html>
