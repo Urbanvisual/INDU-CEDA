@@ -90,7 +90,7 @@
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Modificar producto #101</h1>
+          <h1 class="h2">Modificar Proveedor</h1>
         </div>
 
         <div class="table-responsive">
@@ -100,58 +100,41 @@
               <div class="col-12 p-5">
                 <form class="row g-3 needs-validation" novalidate>
                   <div class="col-md-6">
-                    <label for="exampleDataList" class="form-label">cliente</label>
-                    <input class="form-control" list="datalistOptions" id="exampleDataList" value="616516 mauricio">
-                    <datalist id="datalistOptions">
-                      <option value="8565  fernando">
-                      <option value="616516 mauricio">
-                      <option value="846584 cesar">
-                      <option value="46843 Andrés">
-                      <option value="6486 carlos">
-                    </datalist>
+                    <label for="exampleDataList" class="form-label">Proveedor</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" value="Doble Ingenieria S.A">       
                     <div class="invalid-feedback">
-                      seleccione un cliente
+                      Nombre Proveedor
                     </div>
                     <div class="valid-feedback">
                       excelente
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <label for="exampleDataList" class="form-label">Operario que va a trabajar en el producto</label>
-                    <input class="form-control" list="operarios" id="exampleDataList" value="operario1">
-                    <datalist id="operarios">
-                      <option value="operario1">
-                      <option value="operario2">
+                    <label for="exampleDataList" class="form-label">Nit</label>
+                    <input class="form-control" list="operarios" id="exampleDataList" value="860072275-8">               
+                  <div class="invalid-feedback">
+                      Dijite el Nit del proveedor
+                    </div>
+                    <div class="valid-feedback">
+                      excelente
+                    </div>
+                  </div>
 
-                    </datalist>
-                    <div class="invalid-feedback">
-                      seleccione un operario
+                  <div class="col-md-6">
+                    <label for="exampleDataList" class="form-label">Representante Legal</label>
+                    <input class="form-control" list="tipos-productos" id="exampleDataList" value="Felipe Atuesta">
+                                        <div class="invalid-feedback">
+                      Digite un Nombre valido
                     </div>
                     <div class="valid-feedback">
                       excelente
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <label for="exampleDataList" class="form-label">Tipo de producto</label>
-                    <input class="form-control" list="tipos-productos" id="exampleDataList" value="Puerta">
-                    <datalist id="tipos-productos">
-                      <option value="Puerta">
-                      <option value="Ventana">
-                      <option value="Marquesina">
-                      <option value="Domo">
 
-                    </datalist>
-                    <div class="invalid-feedback">
-                      seleccione un producto
-                    </div>
-                    <div class="valid-feedback">
-                      excelente
-                    </div>
-                  </div>
                   <div class="col-md-6">
-                    <label for="validationCustom03" class="form-label">Caracteristicas del producto</label>
+                    <label for="validationCustom03" class="form-label">Dirección de correspondencia</label>
                     <input type="text" class="form-control" id="validationCustom03"
-                      value="Este producto tiene como caracteristicas dos metros de alto por cinco de hancho y va a ser de color azul">
+                      value="Cl. 79b # 8-11 PI.3 Bogotá">
                     <div class="invalid-feedback">
                       indique las caracteristicas del producto
                     </div>
@@ -162,83 +145,19 @@
 
 
                   <div class="col-md-6">
-                    <label for="nombrecliente" class="form-label">Valor del producto</label>
-                    <input type="number" class="form-control" id="nombrecliente" value="250.000">
+                    <label for="nombrecliente" class="form-label">Telefono</label>
+                    <input type="number" class="form-control"  value="2101700">
                     <div class="valid-feedback">
                       excelente
                     </div>
-                    <div class="invalid-feedback">Falta precio</div>
+                    <div class="invalid-feedback">Falta Nmero</div>
                   </div>
 
-                  <div class="col-md-3">
-                    <label for="exampleDataList" class="form-label">insumos a usar </label>
-                    <input class="form-control" list="insumos" id="exampleDataList" value="varilla">
-                    <datalist id="insumos">
-                      <option value="varilla">
-                      <option value="pintura">
-                      <option value="soldadura">
-                      <option value="hojas de hierro">
-                    </datalist>
-                    <div class="invalid-feedback">
-                      seleccione un insumos
-                    </div>
-                    <div class="valid-feedback">
-                      excelente
-                    </div>
+                  
+                 
+                 
 
-                  </div>
-                  <div class="col-md-3">
-                    <label for="nombrecliente" class="form-label"></label>
-                    <input type="number" class="form-control" id="cantidad" value="9">
-                    <div class="valid-feedback">
-                      excelente
-                    </div>
-                    <div class="invalid-feedback">Falta cantidad</div>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="exampleDataList" class="form-label">Estado en el que se registra </label>
-                    <input class="form-control" list="estados" id="exampleDataList" value="Armado">
-                    <datalist id="estados">
-                      <option value="Pintado">
-                      <option value="Armado">
-                      <option value="Petición de material">
-                    </datalist>
-                    <div class="invalid-feedback">
-                      seleccione un Estado
-                    </div>
-                    <div class="valid-feedback">
-                      excelente
-                    </div>
-
-                  </div>
-                  <div class="col-md-3">
-                    <label for="exampleDataList" class="form-label">insumos a usar </label>
-                    <input class="form-control" list="insumos" id="exampleDataList" value="pintura">
-                    <datalist id="insumos">
-                      <option value="varilla">
-                      <option value="pintura">
-                      <option value="soldadura">
-                      <option value="hojas de hierro">
-                    </datalist>
-                    <div class="invalid-feedback">
-                      seleccione un insumos
-                    </div>
-                    <div class="valid-feedback">
-                      excelente
-                    </div>
-
-                  </div>
-                  <div class="col-md-3">
-                    <label for="nombrecliente" class="form-label"></label>
-                    <input type="number" class="form-control" id="cantidad" value="2">
-                    <div class="valid-feedback">
-                      excelente
-                    </div>
-                    <div class="invalid-feedback">Falta cantidad</div>
-                  </div>
-
-
-                  <div class="row btn_agre" style="margin-top: 30px ;">
+                  <div class="row btn_agre" style="margin: 30px ;">
                     <div class="col-mb-6">
 
                       <a href="../producción/salidasad.html">
@@ -246,12 +165,11 @@
                       </a>
                     </div>
                     <div class="col-md-6">
-                      <a href="">
-                        <button class="btn btn-primary" type="submit">Modificar</button>
+                      <a href="../../producción/modconfir.html" button class="btn btn-success" type="submit" > Guardar 
+                   
                       </a>
-                    </div>
                   </div>
-                 
+
                   <div class="col-md-12">
                     <div class="alert-success">
                       <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -285,6 +203,10 @@
 
                     </div>
                   </div>
+                  </div>
+                
+                
+
               </div>
             </div>
           </div>
