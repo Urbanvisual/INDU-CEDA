@@ -88,12 +88,12 @@
       <!--CONTENIDO-->
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div class="d-flex align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <a class="col-md-1" href="../../proveedores/index.html">
+          <a class="col-md-1" href="../../proveedores/productosPorProveedor/index.html">
             <span data-feather="arrow-left"></span>
           </a>
           <h1 class="col-md-9 h2">Crear Producto</h1>
         </div>
-       
+
 
 
 
@@ -110,7 +110,8 @@
             </div>
 
             <div class="col-md-6">
-              <label for="nombrecliente" class="form-label">Representante Legal</label>
+              <label for="nombrecliente" class="form-label">Tipo</label>
+
               <input type="text" class="form-control" id="nombrecliente" required>
               <div class="valid-feedback">
                 Representante registrados con éxito
@@ -119,7 +120,7 @@
             </div>
 
             <div class="col-md-6">
-              <label for="NitCliente" class="form-label">NIt</label>
+              <label for="NitCliente" class="form-label">Id_producto</label>
               <input type="number" class="form-control" id="NitCliente" required>
               <div class="valid-feedback">
                 NIt agregado satisfactoriamente
@@ -127,35 +128,23 @@
               <div class="invalid-feedback">Falta el Nit</div>
             </div>
 
-            <div class="col-md-6">
-              <label for="nombrecliente" class="form-label">Dirección</label>
-              <input type="text" class="form-control" id="nombrecliente" required>
-              <div class="valid-feedback">
-                Dirección registrada
-              </div>
-              <div class="invalid-feedback">Registre una Dirección</div>
-            </div>
-
 
             <div class="col-md-6">
-              <label for="nombrecliente" class="form-label">Teléfono</label>
-              <input type="number" name="phone" class="form-control" id="nombrecliente" required>
+              <label for="nombrecliente" class="form-label" >Precio</label>
+              <input type="number" name="precio" class="form-control" id="nombrecliente" required placeholder="$">
               <div class="valid-feedback">
-                Teléfono registrado
+                precio a registrar
               </div>
               <div class="invalid-feedback">Por favor registre un número de Telefono</div>
             </div>
 
-
-            <div class="col-md-6">
-              <label for="nombrecliente" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="nombrecliente" placeholder="@" required>
+            <div class="col-md-12" style="margin-top: 25px;">
+              <textarea class="form-control" placeholder="Descripción" id="floatingTextarea" > Descripción</textarea>
               <div class="valid-feedback">
-                Correo registrado
-              </div>
-              <div class="invalid-feedback">Por favor registre un correo electronico</div>
-            </div>
-
+               Descripción ingresada satisfactoriamente
+               </div>
+               <div class="invalid-feedback">Ingrese la descripción</div>
+               </div>
 
         </div>
 

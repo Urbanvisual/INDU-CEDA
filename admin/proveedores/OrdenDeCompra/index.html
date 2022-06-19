@@ -96,37 +96,61 @@
           
          <!--CONTENIDO-->
 
-     
+        
 
         <div>
           <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-6  ">
-              <label for="nombrecliente" class="form-label">Producto</label>
-              <input type="text" class="form-control" id="nombrecliente" required>
+           
+            <div class="col-md-6">
+              <label for="nombrecliente" class="form-label">Fecha</label>
+              <input type="date" class="form-control" id="nombrecliente" required>
               <div class="valid-feedback">
-                Producto registrado con éxito
+                Registro exitoso
               </div>
-              <div class="invalid-feedback">Es necesario poner el nombre del Producto</div>
+              <div class="invalid-feedback">Es necesario colocar una fecha</div>
+            </div>
+           
+           
+            <div class="col-md-6  ">
+              <label for="nombrecliente" class="form-label">Codigo de compra</label>
+              <input type="number" class="form-control" id="nombrecliente" required>
+              <div class="valid-feedback">
+                Codigo registrado con éxito
+              </div>
+              <div class="invalid-feedback">Es necesario poner el codigo del Producto</div>
             </div>
 
             <div class="col-md-6">
-              <label for="nombrecliente" class="form-label">Marca</label>
+              <label for="nombrecliente" class="form-label">Nombre-Marca</label>
               <input type="text" class="form-control" id="nombrecliente" required>
               <div class="valid-feedback">
                 Marca registrados con éxito
               </div>
-              <div class="invalid-feedback">Es necesario registrar al menos un Representante Legal</div>
+              <div class="invalid-feedback">Es necesario registrar la marca </div>
             </div>
+
+            <div class="col-md-6">
+              <label for="nombrecliente" class="form-label">Tipo de producto</label>
+              <input class="form-control" list="tipos-productos" id="exampleDataList" required>
+              <datalist id="tipos-productos">
+                <option value="Pintura">
+                <option value="Metal">
+                <option value="Soldadura">
+                <option value="Herramienta">
+              </datalist>
+              <div class="invalid-feedback">
+              seleccione un producto </div>
+              </div>
 
         
 
             <div class="col-md-6">
-              <label for="nombrecliente" class="form-label">Precio</label>
-              <input type="number" class="form-control" id="nombrecliente" required>
+              <label for="nombrecliente" class="form-label" >Precio</label>
+              <input type="number" class="form-control" id="nombrecliente" placeholder="$" required>
               <div class="valid-feedback">
-                Descripción registrada
+                Precio registrado
               </div>
-              <div class="invalid-feedback">Registre una Descripción</div>
+              <div class="invalid-feedback">Registre una precio</div>
             </div>    
 
             <div class="col-md-6">
@@ -137,6 +161,16 @@
               </div>
               <div class="invalid-feedback">Registre una Cantidad</div>
             </div>  
+
+            <div class="col-md-12" style="margin-top: 25px;">
+              <textarea class="form-control" placeholder="Descripción" id="floatingTextarea" > Descripción</textarea>
+              <div class="valid-feedback">
+               Descripción ingresada satisfactoriamente
+               </div>
+               <div class="invalid-feedback">Ingrese la descripción</div>
+               </div>
+
+          
 
           </div>
 

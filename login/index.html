@@ -75,28 +75,46 @@
      
         <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
 
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-          <label for="floatingInput">Correo </label>
+        <div >
+          <input type="email" class="form-control" id="floatingInput" placeholder="Correo " required>
+          
+          <div class="invalid-feedback">
+            Por favor digite su correo
+          </div>
+          <div class="valid-feedback">
+            Excelente
+          </div>
          
         </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-          <label for="floatingPassword">contraseña</label>
+        <div >
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
+         
+          <div class="invalid-feedback">
+            Por favor digite Contraseña
+          </div>
+          <div class="valid-feedback">
+            Excelente
+          </div>
         </div>
+       
 
-        <div class="checkbox mb-3">
+        <div>
           <label>
             <input type="checkbox" value="remember-me"> No soy un Robot
           </label>
         </div>
-        <a href="../admin/inventario/index.html" button class="w-100 btn btn-lg btn-primary" type="submit"
-          style="margin-top: 5px"> Entrar</a>
-        <a href="registrar.html" button class="w-100 btn btn-lg btn-primary" type="submit" style="margin-top: 5px">
-          Registrar</a>
-          <a href="../admin/inventario/index.html">
-            <button class="btn btn-primary" type="submit">Validar</button>
-          </a> 
+        <a href="../admin/inventario/index.html"
+          button class="btn btn-primary" type="submit"> Entrar </button>
+        </a>
+
+        <a href="registrar.html"
+          button class="btn btn-primary" type="submit">Registrar</button>
+        </a>
+        
+      
+          <a href="../admin/inventario/index.html"
+            button class="btn btn-primary" type="submit">Validar</button>
+          </a>
              <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
         
       </form>
