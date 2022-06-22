@@ -55,13 +55,13 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link "  href="../inventario/index.html">
+              <a class="nav-link"  href="../inventario/index.html">
                 <span data-feather="package"></span>
                 Inventario
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../proveedores/index.html">
+                <a class="nav-link "  href="../proveedores/index.html">
                 <span data-feather="truck"></span>
                 Proveedores
               </a>
@@ -85,82 +85,29 @@
       <!--CONTENIDO-->
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div
-          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-8 border-bottom">
-          
-          <h1 class="col-md-7 ">Listado de produccion</h1>
-          <br>
-          <a class="btn btn-primary text-white" href="../../admin/producción/reporte.html">Reporte</a>
-          <a class="btn btn-primary text-white" href="../../admin/producción/agregar.html">Agregar trabajo</a>
-          <a class="btn btn-primary text-white" href="../../admin/inventario/salidas/registrar.html">Registrar salida</a>
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Reporte produccion</h1>
         </div>
 
         <div class="table-responsive">
           <!-- AGREGUE AQUÍ EL CONTENIDO DE LA PAGINA-->
-          <table class="table">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nombre de cliente</th>
-                <th>Operario</th>
-                <th>Tipo de Producto</th>
-                <th>Estado</th>
-                <th>Destalles</th>
-                <th scope="col">Modificar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">101</th>
-                <td>Mark</td>
-                <td>operario1</td>
-                <td>Puerta</td>
-                <td>ornamentado</td>
-                <td style="cursor:pointer">
-                  <a href="../../admin/producción/detalle.html">
-                    <span data-feather="eye"></span>
-                    Ver detalles
-                  </a>
-                </td>
-                <td><a href="../../admin/producción/modificar.html" button class="btn btn-outline-primary" type="submit" > modificar </a>
-                  <a href="../../admin/producción/eliminar.html" button class="btn btn-outline-danger" type="submit" > eliminar </a>
-              
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">102</th>
-                <td>juan</td>
-                <td>operario2</td>
-                <td>ventana</td>
-                <td>pintura</td>
-                <td style="cursor:pointer">
-                  <a href="../../admin/producción/detalle.html">
-                    <span data-feather="eye"></span>
-                    Ver detalles
-                  </a>
-                </td>
-                <td><a href="../../admin/producción/modificar.html" button class="btn btn-outline-primary" type="submit" > modificar </a>
-                    <button type="button" class="btn btn-outline-danger">Eliminar</button>
- 
-                </td>
-              </tr>
-              <tr>  
-                <th scope="row">103</th>
-                <td>fabricante de vidrios S.A</td>
-                <td>operario1</td>
-                <td>Domo</td>
-                <td>armado</td>
-                <td style="cursor:pointer">
-                  <a href="../../admin/producción/detalle.html">
-                    <span data-feather="eye"></span>
-                    Ver detalles
-                  </a>
-                </td>
-                <td><a href="../../admin/producción/modificar.html" button class="btn btn-outline-primary" type="submit" > modificar </a>
-                    <button type="button" class="btn btn-outline-danger">Eliminar</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 p-5" >
+                    <canvas id="myChart" style="max-width: 500px;"></canvas>
+                    <div class="col-md-5">
+                        <canvas id="myChart"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </form>
+          </div>
+          
+
+
+
         </div>
       </main>
     </div>
@@ -189,6 +136,25 @@
   <script>
     feather.replace()
   </script>
+  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+    
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()</script>
 </body>
 
 </html>
