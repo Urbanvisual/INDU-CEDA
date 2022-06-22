@@ -36,7 +36,7 @@
 <body style="overflow: hidden">
   <!--CABECERA-->
   <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#" style="margin-right:0%">Indumetalicas MYM</a>
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="../../index.html" style="margin-right:0%">Indumetalicas MYM</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,7 +55,7 @@
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../inventario/index.html">
+              <a class="nav-link "  href="../inventario/index.html">
                 <span data-feather="package"></span>
                 Inventario
               </a>
@@ -67,7 +67,7 @@
               </a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="../../admin/producción/produccion.html">
+              <a class="nav-link active" aria-current="page" href="../../admin/producción/produccion.html">
                 <span data-feather="trending-up"></span>
                 Producción
               </a>
@@ -85,11 +85,13 @@
       <!--CONTENIDO-->
       <main class="col-md-10" style="overflow: scroll;height: 830px">
         <div
-          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-8 border-bottom">
           
-          <h1 class="h2">Listado de produccion</h1>
+          <h1 class="col-md-7 ">Listado de produccion</h1>
+          <br>
+          <a class="btn btn-primary text-white" href="../../admin/producción/reporte.html">Reporte</a>
           <a class="btn btn-primary text-white" href="../../admin/producción/agregar.html">Agregar trabajo</a>
-          <a class="btn btn-primary text-white" href="../../admin/inventario/registrarsalida/index.html">Registrar salida</a>
+          <a class="btn btn-primary text-white" href="../../admin/inventario/salidas/registrar.html">Registrar salida</a>
         </div>
 
         <div class="table-responsive">
@@ -103,7 +105,6 @@
                 <th>Tipo de Producto</th>
                 <th>Estado</th>
                 <th>Destalles</th>
-                <th scope="col">Paso en el que se encuentra</th>
                 <th scope="col">Modificar</th>
               </tr>
             </thead>
@@ -111,19 +112,33 @@
               <tr>
                 <th scope="row">101</th>
                 <td>Mark</td>
+                <td>operario1</td>
+                <td>Puerta</td>
                 <td>ornamentado</td>
-                <td>
-                    <button type="button" class="btn btn-outline-primary">Modificar</button>
-                    <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                <td style="cursor:pointer">
+                  <a href="../../admin/producción/detalle.html">
+                    <span data-feather="eye"></span>
+                    Ver detalles
+                  </a>
+                </td>
+                <td><a href="../../admin/producción/modificar.html" button class="btn btn-outline-primary" type="submit" > modificar </a>
+                  <a href="../../admin/producción/eliminar.html" button class="btn btn-outline-danger" type="submit" > eliminar </a>
               
                 </td>
               </tr>
               <tr>
                 <th scope="row">102</th>
-                <td>Jacob</td>
+                <td>juan</td>
+                <td>operario2</td>
+                <td>ventana</td>
                 <td>pintura</td>
-                <td>
-                    <button type="button" class="btn btn-outline-primary">Modificar</button>
+                <td style="cursor:pointer">
+                  <a href="../../admin/producción/detalle.html">
+                    <span data-feather="eye"></span>
+                    Ver detalles
+                  </a>
+                </td>
+                <td><a href="../../admin/producción/modificar.html" button class="btn btn-outline-primary" type="submit" > modificar </a>
                     <button type="button" class="btn btn-outline-danger">Eliminar</button>
  
                 </td>
@@ -131,8 +146,16 @@
               <tr>  
                 <th scope="row">103</th>
                 <td>fabricante de vidrios S.A</td>
+                <td>operario1</td>
+                <td>Domo</td>
                 <td>armado</td>
-                <td> <button type="button" class="btn btn-outline-primary">Modificar</button>
+                <td style="cursor:pointer">
+                  <a href="../../admin/producción/detalle.html">
+                    <span data-feather="eye"></span>
+                    Ver detalles
+                  </a>
+                </td>
+                <td><a href="../../admin/producción/modificar.html" button class="btn btn-outline-primary" type="submit" > modificar </a>
                     <button type="button" class="btn btn-outline-danger">Eliminar</button>
                 </td>
               </tr>
